@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="2px"        
+        android:background="#536F9F"/>  
+    <TextView
+        android:id="@+id/popup_everyday"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="30dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="@drawable/selector_btn_pressed_grey"
+        android:text="每天"
+        android:textSize="18sp"/>
+    
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="2px"        
+        android:background="#536F9F"/>
+    <TextView
+        android:id="@+id/popup_weekday"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="30dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="@drawable/selector_btn_pressed_grey"
+        android:text="周一至周五"
+        android:textSize="18sp"/>
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="2px"        
+        android:background="#536F9F"/>
+    <TextView
+        android:id="@+id/popup_custom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="30dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="@drawable/selector_btn_pressed_grey"
+        android:text="自定义"
+        android:textSize="18sp"/>
+
+</LinearLayout>

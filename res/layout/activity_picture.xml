@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="#000000">
+    
+	
+	<com.shoes.customview.ScaleableImageView
+	   android:id="@+id/picture_show"
+	   android:layout_width="match_parent"
+	   android:layout_height="match_parent"		
+	   android:layout_centerInParent="true" 
+	   android:scaleType="centerInside"      
+	   android:background="#33ffffff"/>
+	
+
+    <RelativeLayout 
+        android:id="@+id/thumbnail_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+        <ImageView 
+            android:id="@+id/thumbnail_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:scaleType="centerInside"/>
+	    <ProgressBar 
+	        android:id="@+id/dialog_progressBar"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:progressDrawable="@color/loading_progress_color"	              
+	        android:layout_centerInParent="true"
+	        style="@style/RotateProgress"     
+	        android:background="@android:color/transparent"/>
+    </RelativeLayout>
+
+</RelativeLayout>

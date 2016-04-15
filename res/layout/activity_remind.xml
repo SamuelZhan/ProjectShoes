@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+         android:layout_height="45dp">
+        
+        <ImageButton 
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingRight="20dp"
+            android:src="@drawable/back_bg"
+            android:background="@drawable/selector_btn_pressed_color_blue"
+            android:layout_alignParentLeft="true"/>
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="提醒"
+            android:textSize="20sp"
+            android:textColor="#ffffff"/>
+        
+    </RelativeLayout>
+    
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="#33ffffff"/>
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical">
+        
+        <TextView
+            android:id="@+id/remind_call_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:paddingLeft="5dp"
+            android:paddingTop="2dp"
+            android:text="来电提醒"
+            android:textColor="#ffffff"
+            android:textSize="18sp"/>
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/remind_call_layout"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:paddingLeft="5dp"
+            android:text="手机来电时鞋子震动提醒"
+            android:textColor="#ffffff"
+            android:textSize="11sp"/>
+        
+        <ImageButton
+            android:id="@+id/btn_open_remind_when_called"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/toggle_btn_open"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:background="#00ffffff"/>
+        
+    </RelativeLayout>
+    
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="#33ffffff"/>
+    
+    <RelativeLayout 
+        android:id="@+id/btn_remind_on_time"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/selector_btn_pressed_color_blue">
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:padding="5dp"
+            android:text="定时提醒"
+            android:textColor="#ffffff"
+            android:textSize="18sp"/>       
+        
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/right_arrow"/>
+        
+    </RelativeLayout>
+    
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="#33ffffff"/>
+
+</LinearLayout>

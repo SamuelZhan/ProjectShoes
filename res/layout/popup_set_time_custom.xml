@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+        
+    <CheckBox 
+        android:id="@+id/popup_Monday"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:button="@null"
+        android:text="星期一"
+        android:textSize="18sp"
+        android:textColor="#88000000"
+        android:paddingLeft="45dp"
+        android:paddingRight="45dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="@drawable/selector_btn_pressed_grey"
+        android:drawableRight="@drawable/selector_virtual_call_dialog"/>
+    
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="2px"        
+        android:background="#536F9F"/>
+    
+    <CheckBox 
+        android:id="@+id/popup_Tuesday"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:button="@null"
+        android:text="星期二"
+        android:textSize="18sp"
+        android:textColor="#88000000"
+        android:paddingLeft="45dp"
+        android:paddingRight="45dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="@drawable/selector_btn_pressed_grey"
+        android:drawableRight="@drawable/selector_virtual_call_dialog"/>
+    
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="2px"        
+        android:background="#536F9F"/> 
+        
+    <CheckBox 
+        android:id="@+id/popup_Wednesday"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:button="@null"
+        android:text="星期三"
+        android:textSize="18sp"
+        android:textColor="#88000000"
+        android:paddingLeft="45dp"
+        android:paddingRight="45dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="@drawable/selector_btn_pressed_grey"
+        android:drawableRight="@drawable/selector_virtual_call_dialog"/>
+    
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="2px"        
+        android:background="#536F9F"/>
+        
+    <CheckBox 
+        android:id="@+id/popup_Thursday"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:button="@null"
+        android:text="星期四"
+        android:textSize="18sp"
+        android:textColor="#88000000"
+        android:paddingLeft="45dp"
+        android:paddingRight="45dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="@drawable/selector_btn_pressed_grey"
+        android:drawableRight="@drawable/selector_virtual_call_dialog"/>
+    
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="2px"        
+        android:background="#536F9F"/>
+        
+    <CheckBox 
+        android:id="@+id/popup_Friday"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:button="@null"
+        android:text="星期五"
+        android:textSize="18sp"
+        android:textColor="#88000000"
+        android:paddingLeft="45dp"
+        android:paddingRight="45dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="@drawable/selector_btn_pressed_grey"
+        android:drawableRight="@drawable/selector_virtual_call_dialog"/>
+    
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="2px"        
+        android:background="#536F9F"/> 
+        
+    <CheckBox 
+        android:id="@+id/popup_Saturday"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:button="@null"
+        android:text="星期六"
+        android:textSize="18sp"
+        android:textColor="#88000000"
+        android:paddingLeft="45dp"
+        android:paddingRight="45dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="@drawable/selector_btn_pressed_grey"
+        android:drawableRight="@drawable/selector_virtual_call_dialog"/>
+    
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="2px"        
+        android:background="#536F9F"/> 
+        
+    <CheckBox 
+        android:id="@+id/popup_Sunday"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:button="@null"
+        android:text="星期日"
+        android:textSize="18sp"
+        android:textColor="#88000000"
+        android:paddingLeft="45dp"
+        android:paddingRight="45dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="@drawable/selector_btn_pressed_grey"
+        android:drawableRight="@drawable/selector_virtual_call_dialog"/>
+    
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="2px"        
+        android:background="#536F9F"/> 
+        
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        
+        <Button 
+            android:id="@+id/btn_sure"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="45dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:background="@drawable/selector_btn_add_remind_pressed"
+            android:text="确  定"
+            android:textSize="18sp"
+            android:textColor="#000000"/>
+        
+        <Button 
+            android:id="@+id/btn_cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="45dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:background="@drawable/selector_btn_add_remind_pressed"
+            android:text="取  消"
+            android:textSize="18sp"
+            android:textColor="#000000"/>
+        
+    </LinearLayout>"
+        
+   
+
+</LinearLayout>

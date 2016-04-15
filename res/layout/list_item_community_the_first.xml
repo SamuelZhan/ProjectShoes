@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res/com.example.shoes"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    android:descendantFocusability="blocksDescendants">
+    
+    <LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="180dp"
+	    android:background="@drawable/community_bg"	
+	    android:gravity="center_horizontal"    
+	    android:orientation="vertical" >
+	
+	    <com.shoes.customview.RoundCornerImageView 
+	        android:id="@+id/community_head_image"
+	        android:layout_width="80dp"
+	        android:layout_height="80dp"
+	        android:layout_marginTop="20dp"
+	        android:src="@drawable/head_image_default"
+	        custom:type="circle"/>
+	    <TextView
+	        android:id="@+id/community_nickname"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="5dp"
+	        android:text="喵了个咪"
+	        android:textColor="#ffffff"
+	        android:textSize="15sp" />
+	
+	    <TextView
+	        android:id="@+id/community_my_comment"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="5dp"
+	        android:text="无"
+	        android:layout_marginLeft="20dp"
+	        android:layout_marginRight="20dp"
+	        android:textColor="#ffffff"
+	        android:textSize="12sp" />
+	</LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btn_send_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+        android:clickable="true">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#33ffffff"
+            android:gravity="left|center_vertical"
+            android:text="说点什么吧"   
+            android:textSize="15sp"  
+            android:textColor="#bfbfbf"               
+            android:paddingLeft="5dp"
+            android:clickable="false"/>
+     	<View
+	         android:layout_width="1dp"
+	         android:layout_height="match_parent"
+	         android:background="#33ffffff" 
+	         android:clickable="false"/>
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/community_btn_my_comment"
+            android:background="#E5E5E5"
+            android:paddingBottom="8dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingTop="8dp"                    
+            android:clickable="false"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#ffffff" />
+
+</LinearLayout>

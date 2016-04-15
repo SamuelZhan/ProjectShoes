@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+         android:layout_height="45dp">
+        
+        <ImageButton 
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingRight="20dp"
+            android:src="@drawable/back_bg"
+            android:background="@drawable/selector_btn_pressed_color_blue"
+            android:layout_alignParentLeft="true"/>
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="计步信息"
+            android:textSize="20sp"
+            android:textColor="#ffffff"/>
+        
+    </RelativeLayout>
+    
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="#33ffffff"/>
+    
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:background="#33ffffff"/>
+    
+    <RelativeLayout 
+        android:id="@+id/btn_age"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp" 
+        android:gravity="center_vertical"
+        android:background="@drawable/selector_btn_pressed_color_blue">
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dp"
+            android:text="年龄"
+            android:textSize="18sp"
+            android:textColor="#ffffff"/>
+        
+        <TextView
+            android:id="@+id/tv_age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:text="20岁"
+            android:textSize="18sp"
+            android:textColor="#ffffff"/>
+        
+    </RelativeLayout>
+    
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:background="#33ffffff"/>
+    
+    <RelativeLayout 
+        android:id="@+id/btn_height"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp" 
+        android:gravity="center_vertical"
+        android:background="@drawable/selector_btn_pressed_color_blue">
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dp"
+            android:text="身高"
+            android:textSize="18sp"
+            android:textColor="#ffffff"/>
+        
+        <TextView
+            android:id="@+id/tv_height"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:text="170cm"
+            android:textSize="18sp"
+            android:textColor="#ffffff"/>
+        
+    </RelativeLayout>
+    
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:background="#33ffffff"/>
+    
+    <RelativeLayout 
+        android:id="@+id/btn_weight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp" 
+        android:gravity="center_vertical"
+        android:background="@drawable/selector_btn_pressed_color_blue">
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dp"
+            android:text="体重"
+            android:textSize="18sp"
+            android:textColor="#ffffff"/>
+        
+        <TextView
+            android:id="@+id/tv_weight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:text="65kg"
+            android:textSize="18sp"
+            android:textColor="#ffffff"/>
+        
+    </RelativeLayout>
+    
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:background="#33ffffff"/>
+    
+    <RelativeLayout 
+        android:id="@+id/btn_step_length"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp" 
+        android:gravity="center_vertical"
+        android:background="@drawable/selector_btn_pressed_color_blue">
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dp"
+            android:text="步长"
+            android:textSize="18sp"
+            android:textColor="#ffffff"/>
+        
+        <TextView
+            android:id="@+id/tv_step_length"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:text="65cm"
+            android:textSize="18sp"
+            android:textColor="#ffffff"/>
+        
+    </RelativeLayout>
+    
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:background="#33ffffff"/>
+    
+
+</LinearLayout>

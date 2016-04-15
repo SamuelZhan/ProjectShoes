@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+    
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="-40dp"
+        android:src="@drawable/search_phone_image"/>
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+        
+        <ImageView
+            android:id="@+id/search_circle_image"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/shape_circle"/>
+        
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/search_shoes_image"/>
+        
+    </RelativeLayout>
+    
+    <Button
+        android:id="@+id/search_btn_close_alarm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal" 
+        android:paddingLeft="28dp"
+        android:paddingRight="28dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:background="@drawable/shape_search_alarm_btn"      
+        android:text="关 闭 警 报"
+        android:textColor="#ffffff"
+        android:textSize="18sp"/>
+
+</LinearLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+         android:layout_height="45dp">
+        
+        <ImageButton 
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingRight="20dp"
+            android:src="@drawable/back_bg"
+            android:background="@drawable/selector_btn_pressed_color_blue"
+            android:layout_alignParentLeft="true"/>
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="关于我们"
+            android:textSize="20sp"
+            android:textColor="#ffffff"/>
+        
+    </RelativeLayout>
+    
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="#33ffffff"/>
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text=
+        "智能鞋1.1.1功能介绍\n \n
+    1.运动计步：\n
+       每日记录你的步数，卡路里，距离，时间在APP上显示\n
+       让您每天了解自己的数据。\n\n
+    2.闹钟提醒：\n
+       设置时间后智能鞋自动提醒您。\n\n
+    3.来电提醒：\n
+       来电时，智能鞋自动提示让您不错过任何一个来电。\n\n
+    4.智能加热：\n
+       当您感觉脚寒冷时，智能鞋可以一键加热，随时贴心关\n
+       爱您的脚掌。\n\n
+    5.虚拟来电：\n
+       当您想要离开，您就跺跺脚，虚拟电话响起，堪称“逃跑\n
+       神器”。\n\n
+    6.防丢功能：\n
+       一旦手机超出与鞋子的预设距离，手机立马发出响铃警\n
+       报，手机不易丢失。"
+		android:textColor="#ffffff"
+		android:textSize="12sp"/>
+    
+    <Button 
+        android:id="@+id/about_btn_version"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:gravity="center"
+        android:background="@drawable/selector_btn_add_remind_pressed"
+        android:text="检查新版本"
+        android:textColor="#000000"
+        android:textSize="16sp"/>
+    
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="© 2016 广州市意凯鞋业有限公司"
+        android:textColor="#ffffff"
+        android:textSize="10sp"/>
+    
+</LinearLayout>

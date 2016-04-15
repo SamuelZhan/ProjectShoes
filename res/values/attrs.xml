@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="GifView">
+        <attr name="gif" format="reference"/>
+        <attr name="paused" format="boolean" />
+    </declare-styleable>
+    
+    <declare-styleable name="RoundCornerImageView">
+        <attr name="cornerRadius" format="dimension"/>
+        <attr name="hasCrown" format="boolean"/>
+        <attr name="type">
+            <enum name="circle" value="0"/>
+            <enum name="round" value="1"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="CustomTheme">
+        <attr name="gifViewStyle" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="RoundProgressBar">
+        <attr name="progressColor" format="color"/>
+        <attr name="secondProgressColor" format="color"/>        
+        <attr name="count" format="integer"/>
+        <attr name="currentCount" format="integer"/>
+        <attr name="progressWidth" format="dimension"/>
+        <attr name="splitAngle" format="integer"/>
+        <attr name="startAngle" format="integer"/>
+        <attr name="spaceAngle" format="integer"/>
+        <attr name="hasPointer" format="boolean"/>
+    </declare-styleable>
+    
+    <style name="loading_dialog_style" parent="android:Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>  
+        <item name="android:windowFrame">@null</item>  
+        <item name="android:windowNoTitle">true</item>  
+        <item name="android:windowIsFloating">true</item>  
+        <item name="android:windowIsTranslucent">true</item>  
+        <item name="android:windowContentOverlay">@null</item>  
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>  
+        <item name="android:backgroundDimEnabled">true</item>
+        
+    </style>
+</resources>

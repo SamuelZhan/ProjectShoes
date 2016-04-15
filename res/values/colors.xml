@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="round_corner_listview_bg">#33ffffff</color>
+    <color name="btn_pressed">#1A2038</color>
+    <color name="btn_unpressed">#00ffffff</color>
+    <color name="loading_progress_color">#FFDD11</color>
+</resources>

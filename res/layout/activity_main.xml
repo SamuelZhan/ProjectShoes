@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background" 
+    android:orientation="vertical">
+    
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        
+    </FrameLayout>
+
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginBottom="5dp"
+        android:background="#33ffffff"/>
+    
+    <RadioGroup 
+        android:id="@+id/tab_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal">
+        
+        <RadioButton 
+            android:id="@+id/btn_home"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/selector_tab_home"
+            android:button="@null"
+            android:gravity="center_horizontal"
+            android:checked="true"
+            android:text="主页"
+            android:textColor="@drawable/selector_tab_text_color"/>
+        
+        <RadioButton 
+            android:id="@+id/btn_community"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/selector_tab_community"
+            android:button="@null"
+            android:gravity="center_horizontal"
+            android:text="社区"
+            android:textColor="@drawable/selector_tab_text_color"/>
+        
+        <RadioButton 
+            android:id="@+id/btn_shop"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/selector_tab_shop"
+            android:button="@null"
+            android:gravity="center_horizontal"
+            android:text="商城"
+            android:textColor="@drawable/selector_tab_text_color"/>
+        
+        <RadioButton 
+            android:id="@+id/btn_mine"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/selector_tab_mine"
+            android:button="@null"
+            android:gravity="center_horizontal"
+            android:text="我的"
+            android:textColor="@drawable/selector_tab_text_color"/>
+        
+    </RadioGroup>
+</LinearLayout>

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+         android:layout_height="45dp">
+        
+        <ImageButton 
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingRight="20dp"
+            android:src="@drawable/back_bg"
+            android:background="@drawable/selector_btn_pressed_color_blue"
+            android:layout_alignParentLeft="true"/>
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="选择壁纸"
+            android:textSize="20sp"
+            android:textColor="#ffffff"/>
+        
+    </RelativeLayout>
+    
+    <LinearLayout         
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#E5E5E5"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        
+        <RelativeLayout
+            android:id="@+id/get_album"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:background="#FFFFFF"
+            android:gravity="center_vertical">
+            
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="15dp"
+                android:text="从手机相册选择"
+                android:textSize="15sp"
+                android:textColor="#000000"/>
+            
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/right_arrow_grey"/>
+        </RelativeLayout>
+        
+        <RelativeLayout
+            android:id="@+id/get_camera"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="1dp"
+            android:background="#FFFFFF"
+            android:gravity="center_vertical">
+            
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="15dp"
+                android:text="拍一张"
+                android:textSize="15sp"
+                android:textColor="#000000"/>
+            
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/right_arrow_grey"/>
+        </RelativeLayout>
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:text="默认壁纸:"
+            android:textColor="#000000"/>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:orientation="horizontal">
+            
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                              
+                <ImageView 
+	                 android:id="@+id/default_wallpaper_1"
+	                 android:layout_width="100dp"
+	                 android:layout_height="200dp"
+	                 android:scaleType="fitXY"
+	                 android:layout_centerInParent="true"
+	                 android:layout_marginTop="5dp"
+	                 android:src="@drawable/wallpaper_default1"/>
+            
+           		<ImageView
+           		     android:id="@+id/default_wallpaper_1_checked"
+	                 android:layout_width="wrap_content"
+	                 android:layout_height="wrap_content"
+	                 android:layout_alignRight="@id/default_wallpaper_1"
+	                 android:layout_marginRight="-5dp"
+	                 android:src="@drawable/checked_yes"
+	                 android:visibility="gone"/>
+
+              
+            </RelativeLayout>
+            
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                              
+                <ImageView 
+	                 android:id="@+id/default_wallpaper_2"
+	                 android:layout_width="100dp"
+	                 android:layout_height="200dp"
+	                 android:scaleType="fitXY"
+	                 android:layout_centerInParent="true"
+	                 android:layout_marginTop="5dp"
+	                 android:src="@drawable/wallpaper_default2"/>
+            
+           		<ImageView
+           		     android:id="@+id/default_wallpaper_2_checked"
+	                 android:layout_width="wrap_content"
+	                 android:layout_height="wrap_content"
+	                 android:layout_alignRight="@id/default_wallpaper_2"
+	                 android:layout_marginRight="-10dp"
+	                 android:src="@drawable/checked_yes"
+	                 android:visibility="gone"/>
+
+              
+            </RelativeLayout>
+            
+        </LinearLayout>
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:text="壁纸预览:"
+            android:textColor="#000000"/>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:orientation="horizontal">
+            
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                              
+                <ImageView 
+	                 android:id="@+id/wallpaper_preview"
+	                 android:layout_width="100dp"
+	                 android:layout_height="200dp"
+	                 android:scaleType="fitXY"
+	                 android:layout_centerInParent="true"
+	                 android:layout_marginTop="5dp"
+	                 android:background="#888888"
+	                 android:src="@drawable/wallpaper_default1"/>
+              
+            </RelativeLayout>
+            
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">            
+            </RelativeLayout>
+            
+        </LinearLayout>
+        
+    </LinearLayout>
+</LinearLayout>

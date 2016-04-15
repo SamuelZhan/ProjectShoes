@@ -1,0 +1,47 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+       
+    <style name="popupwindow_display_anim">
+        <item name="android:windowEnterAnimation">@anim/animation_popup_show</item>
+        <item name="android:windowExitAnimation">@anim/animation_popup_hide</item>
+    </style>
+    
+    <style name="register_cb_style" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/selector_register_cb</item>
+    </style>
+    
+    <style name="list_item_alarm_status" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/selector_toggle_alarm_status</item>
+    </style>
+    
+    <style name="SampleTheme" parent="android:Theme">
+        <item name="numberPickerStyle">@style/NPWidget.Holo.NumberPicker</item>
+    </style>
+    
+    <!--解决闹钟设置页的风格兼容  -->
+    <style name="MyDialogTheme" parent="@android:style/Theme.Holo.Light.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item> 
+    </style>
+    
+    <style name="RotateProgress">
+        <item name="android:indeterminateDrawable">@drawable/shape_rotate_progressbar</item>
+    </style>
+    
+</resources>

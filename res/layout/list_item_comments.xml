@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res/com.example.shoes"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"        
+        android:gravity="center_vertical"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <com.shoes.customview.RoundCornerImageView 
+            android:id="@+id/list_item_infos_head_image"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/head_image_default"
+            custom:type="circle"/>
+        
+        <TextView 
+            android:id="@+id/list_item_infos_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_comment_bg"
+            android:text=""
+            android:textColor="#ffffff"
+            android:textSize="16sp"/>
+        
+        <View
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+        
+        <TextView
+            android:id="@+id/list_item_infos_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:text=""
+            android:textColor="#ffffff"
+            android:textSize="12sp"/>
+        
+    </LinearLayout>
+    
+    <TextView 
+        android:id="@+id/list_item_infos_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="5dp"
+        android:text=""
+        android:textColor="#ffffff"
+        android:textSize="16sp"/>
+    
+    <ImageView
+        android:id="@+id/list_item_infos_content_image"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:scaleType="centerCrop"
+        android:background="#33ffffff"/>
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right">
+        
+        <TextView
+            android:id="@+id/list_item_btn_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="3dp"
+            android:background="@drawable/selector_comment_bg"
+            android:text="删除"
+            android:textColor="#ffffff"
+            android:textSize="12sp"/>
+     
+        <TextView
+            android:id="@+id/list_item_btn_praise"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/list_item_btn_delete"
+            android:padding="3dp"
+            android:layout_marginRight="5dp"	
+            android:background="@drawable/selector_comment_bg"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="#ffffff"
+            android:drawableLeft="@drawable/community_btn_unsupport"/>
+        
+        <TextView
+            android:id="@+id/list_item_btn_comment"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:layout_marginRight="5dp"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="#ffffff"
+            android:layout_toRightOf="@id/list_item_btn_praise"
+            android:background="@drawable/selector_comment_bg"
+            android:drawableLeft="@drawable/community_btn_comment"/>
+       
+    </RelativeLayout>
+    
+    <LinearLayout 
+        android:id="@+id/comments_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical">
+        
+    </LinearLayout>
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:background="#33ffffff" />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:orientation="horizontal">
+        
+        <EditText
+            android:id="@+id/list_item_community_comment"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingLeft="10dp"
+            android:background="#33ffffff"
+            android:singleLine="true"
+            android:textSize="15sp"
+            android:textColor="#ffffff"
+            android:hint="我也说一句"/>
+        
+        <View
+	        android:layout_width="1dp"
+	        android:layout_height="match_parent"
+	        android:background="#33ffffff" />
+        
+        <Button
+            android:id="@+id/list_item_community_comment_send"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="发送"
+            android:textSize="15sp"
+            android:background="@drawable/selector_btn_send_bg"/>
+        
+    </LinearLayout>
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#ffffff" />
+
+</LinearLayout>

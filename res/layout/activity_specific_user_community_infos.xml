@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+    
+	<RelativeLayout
+        android:layout_width="match_parent"
+         android:layout_height="45dp">
+        
+        <ImageButton 
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingRight="20dp"
+            android:src="@drawable/back_bg"
+            android:background="@drawable/selector_btn_pressed_color_blue"
+            android:layout_alignParentLeft="true"/>
+        
+        <TextView 
+            android:id="@+id/tv_specific_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="用户昵称"
+            android:textSize="20sp"
+            android:textColor="#ffffff"/>
+        
+    </RelativeLayout>
+    
+	<View 
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="#33ffffff"/>
+    
+	
+	<ListView 
+        android:id="@+id/user_community_infos"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#22ffffff"
+        android:scrollbars="none"
+        android:divider="#bfbfbf"
+        android:dividerHeight="0dp"
+        android:cacheColorHint="#00000000"
+        android:listSelector="#00000000"/>
+	
+	<LinearLayout 
+        android:id="@+id/send_comment_input"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#ffffff"
+        android:orientation="vertical">
+        
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#bfbfbf"/>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <EditText 
+	            android:id="@+id/et_input_comment"
+	            android:layout_width="0dp"
+	            android:layout_height="match_parent"
+	            android:layout_weight="1"
+	            android:layout_marginLeft="10dp"
+	            android:background="#00000000"
+	            android:singleLine="true"/>
+        
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#bfbfbf"/>
+        	<Button 
+	            android:id="@+id/btn_send_comment"
+	            android:layout_width="60dp"
+	            android:layout_height="match_parent"
+	            android:background="@drawable/selector_btn_send_bg"
+	            android:text="发送"
+	            android:textSize="20sp"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#bfbfbf"/>
+       
+    </LinearLayout> 
+</LinearLayout>

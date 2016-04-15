@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+         android:layout_height="45dp">
+        
+        <ImageButton 
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingRight="20dp"
+            android:src="@drawable/back_bg"
+            android:background="@drawable/selector_btn_pressed_color_blue"
+            android:layout_alignParentLeft="true"/>
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="创客英雄"
+            android:textSize="20sp"
+            android:textColor="#ffffff"/>
+        
+    </RelativeLayout>
+    
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="#33ffffff"/>
+    
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="欢迎您提出宝贵的创意和建议，如果您的创意被我们采纳，我们将会有专人与您联系，感谢您使用我们的APP"
+        android:textColor="#ffffff"
+        android:textSize="12sp"/>
+    
+    <com.lee.pullrefresh.ui.PullToRefreshListView
+        android:id="@+id/pull_to_refresh_listview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#00000000"/>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+        
+        <EditText
+            android:id="@+id/hero_input"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"      
+            android:background="@drawable/shape_feedback_input"      
+            android:paddingLeft="5dp"
+            android:textColor="#ffffff"
+            android:textSize="15sp"
+            android:hint="请输入反馈意见和建议..."
+            android:textColorHint="#ffffff"/>
+        
+        <Button
+            android:id="@+id/hero_btn_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@drawable/selector_btn_send"
+            android:text="发送"
+            android:textSize="15sp"
+            android:textColor="#000000"/>
+        
+    </LinearLayout>
+
+</LinearLayout>

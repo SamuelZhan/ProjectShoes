@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res/com.example.shoes"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+    
+    <TextView
+        android:id="@+id/list_item_rankings_number"
+        android:layout_width="36dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:text="100"
+        android:textColor="#ee0000"
+        android:textSize="20sp"/>
+    
+    <LinearLayout
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+        <com.shoes.customview.RoundCornerImageView
+	        android:id="@+id/list_item_rankings_head_image"
+	        android:layout_width="80dp"
+	        android:layout_height="80dp"
+	        android:src="@drawable/head_image_default"
+	        custom:type="circle"
+	        custom:hasCrown="true"/> 
+    </LinearLayout>          
+            
+    <TextView
+        android:id="@+id/list_item_rankings_nickname"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginLeft="10dp"
+        android:singleLine="true"
+        android:text="魅影殇歌"
+        android:textColor="#000000"
+        android:textSize="16sp"/>
+    
+    <TextView
+        android:id="@+id/list_item_rankings_steps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="1111"
+        android:textColor="#ee0000"
+        android:textSize="16sp"/>
+    
+    <TextView
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="15dp"
+        android:gravity="center"
+        android:text="步"
+        android:textColor="#000000"
+        android:textSize="16sp"/>
+        
+        
+</LinearLayout>

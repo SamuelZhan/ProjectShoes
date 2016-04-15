@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>   	
+<ScrollView    
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="none">
+	<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"       
+        android:orientation="vertical">
+	    <RelativeLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="center_vertical">
+	        
+	        <RelativeLayout
+	            android:id="@+id/left_connect_status_layout"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:padding="10dp"
+	            android:layout_marginLeft="10dp"
+	            android:layout_alignParentLeft="true">
+	            <ImageView 
+	                android:id="@+id/left_connection_status"
+	                android:layout_width="wrap_content"
+	            	android:layout_height="wrap_content"
+	            	android:src="@drawable/left_disconnected"/>
+	            <LinearLayout 
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content" 
+	                android:layout_toRightOf="@id/left_connection_status"
+	                android:orientation="vertical">
+	                <TextView
+	                    android:id="@+id/home_electricity_left"
+		                android:layout_width="wrap_content"
+		           	 	android:layout_height="wrap_content"	           	 	
+		           	 	android:layout_marginLeft="5dp"
+		           	 	android:text="0 %"
+		           	 	android:textSize="10sp"
+		           	 	android:textColor="#ffffff"/>
+	                
+	                <TextView               
+	                    android:id="@+id/home_temperature_left"     
+		                android:layout_width="wrap_content"
+		           	 	android:layout_height="wrap_content"  
+		           	 	android:layout_marginLeft="5dp"         	 	
+		           	 	android:text="0℃"
+		           	 	android:textSize="10sp"
+		           	 	android:textColor="#ffffff"/>
+	                
+	            </LinearLayout>
+	            
+	        </RelativeLayout>
+	        
+	        <RelativeLayout
+	            android:id="@+id/right_connect_status_layout"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:padding="10dp"
+	            android:layout_toRightOf="@id/left_connect_status_layout">
+	            <ImageView 
+	                android:id="@+id/right_connection_status"
+	                android:layout_width="wrap_content"
+	            	android:layout_height="wrap_content"
+	            	android:src="@drawable/right_disconnected"/>
+	            
+	            <LinearLayout 
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content" 
+	                android:layout_toRightOf="@id/right_connection_status"
+	                android:orientation="vertical">
+	                <TextView
+	                    android:id="@+id/home_electricity_right"
+		                android:layout_width="wrap_content"
+		           	 	android:layout_height="wrap_content"	           	 	
+		           	 	android:layout_marginLeft="5dp"
+		           	 	android:text="0 %"
+		           	 	android:textSize="10sp"
+		           	 	android:textColor="#ffffff"/>
+	                
+	                <TextView
+	                    android:id="@+id/home_temperature_right" 
+		                android:layout_width="wrap_content"
+		           	 	android:layout_height="wrap_content"  
+		           	 	android:layout_marginLeft="5dp"         	 	
+		           	 	android:text="0℃"
+		           	 	android:textSize="10sp"
+		           	 	android:textColor="#ffffff"/>
+	                
+	            </LinearLayout>
+	            
+	            
+	        </RelativeLayout>
+	        
+	        <ImageView
+	            android:id="@+id/notify_alarm"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:padding="10dp"
+	            android:src="@drawable/notify_alarm"
+	            android:layout_alignParentRight="true"/>
+	        
+	        <ImageView
+	            android:id="@+id/notify_temperature"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:padding="10dp"
+	            android:src="@drawable/temperature"
+	            android:layout_toLeftOf="@id/notify_alarm"/>
+	        
+	        <ImageView
+	            android:id="@+id/notify_charge"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:padding="10dp"
+	            android:src="@drawable/charge"
+	            android:layout_toLeftOf="@id/notify_temperature"/>
+	        
+	    </RelativeLayout>
+	    
+	    <View 
+	        android:layout_width="match_parent"
+	        android:layout_height="2px"
+	        android:background="#33ffffff"/>
+	    
+	    <LinearLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="120dp"
+	        android:orientation="horizontal">
+	        
+	        <RelativeLayout
+	            android:id="@+id/count"
+	            android:layout_width="0dp"
+	            android:layout_height="match_parent"
+	            android:layout_weight="1"
+	            android:background="@drawable/selector_btn_pressed_color_blue"
+	            android:gravity="center">            
+	            <TextView
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:drawableTop="@drawable/count"
+	                android:layout_alignParentBottom="true"
+	                android:gravity="center"                
+	                android:text="计步"
+	                android:textColor="#FFDD11"
+	                android:textSize="17sp"/>
+	        </RelativeLayout>
+	        
+	        <View
+	            android:layout_width="2px"
+	            android:layout_height="match_parent"
+	            android:background="#33ffffff"/>
+	        
+	        <RelativeLayout
+	            android:id="@+id/heat"
+	            android:layout_width="0dp"
+	            android:layout_height="match_parent"
+	            android:layout_weight="1"
+	            android:gravity="center"
+	            android:background="@drawable/selector_btn_pressed_color_blue"
+	            android:orientation="vertical">            
+	            <TextView
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:drawableTop="@drawable/heat"
+	                android:layout_alignParentBottom="true"
+	                android:gravity="center"
+	                android:text="加热"
+	                android:textColor="#FFDD11"
+	                android:textSize="17sp"/>
+	        </RelativeLayout>        
+	        
+	        <View
+	            android:layout_width="2px"
+	            android:layout_height="match_parent"
+	            android:background="#33ffffff"/>
+	        
+	        <RelativeLayout
+	            android:id="@+id/virtual_call"
+	            android:layout_width="0dp"
+	            android:layout_height="match_parent"
+	            android:layout_weight="1"
+	            android:gravity="center"
+	            android:background="@drawable/selector_btn_pressed_color_blue"
+	            android:orientation="vertical">
+	            
+	            <TextView
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:drawableTop="@drawable/virtual_call"
+	                android:layout_alignParentBottom="true"
+	                android:gravity="center"
+	                android:text="虚拟来电"
+	                android:textColor="#FFDD11"
+	                android:textSize="17sp"/>
+	        </RelativeLayout>
+	    </LinearLayout>
+	    
+	    <View 
+	        android:layout_width="match_parent"
+	        android:layout_height="2px"
+	        android:background="#33ffffff"/>
+	    
+	    <LinearLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="120dp"
+	        android:orientation="horizontal">
+	        
+	        <RelativeLayout
+	            android:id="@+id/search_phone"
+	            android:layout_width="0dp"
+	            android:layout_height="match_parent"
+	            android:layout_weight="1"
+	            android:gravity="center"
+	            android:background="@drawable/selector_btn_pressed_color_blue"
+	            android:orientation="vertical">
+	           
+	            <TextView
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content" 
+	                android:drawableTop="@drawable/search_phone"
+	                android:layout_alignParentBottom="true"  
+	                android:gravity="center"         
+	                android:text="手机防丢"
+	                android:textColor="#FFDD11"
+	                android:textSize="17sp"/>
+	        </RelativeLayout>
+	        
+	        <View
+	            android:layout_width="2px"
+	            android:layout_height="match_parent"
+	            android:background="#33ffffff"/>
+	        
+	        <RelativeLayout
+	            android:id="@+id/remind"
+	            android:layout_width="0dp"
+	            android:layout_height="match_parent"
+	            android:layout_weight="1"
+	            android:gravity="center"
+	            android:background="@drawable/selector_btn_pressed_color_blue"
+	            android:orientation="vertical">
+	            
+	            <TextView
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:drawableTop="@drawable/time_alarm"
+	                android:layout_alignParentBottom="true"
+	                android:gravity="center"
+	                android:text="提醒"
+	                android:textColor="#FFDD11"
+	                android:textSize="17sp"/>
+	        </RelativeLayout>        
+	        
+	        <View
+	            android:layout_width="2px"
+	            android:layout_height="match_parent"
+	            android:background="#33ffffff"/>
+	        
+	        <RelativeLayout
+	            android:id="@+id/led"
+	            android:layout_width="0dp"
+	            android:layout_height="match_parent"
+	            android:layout_weight="1"
+	            android:gravity="center"
+	            android:background="@drawable/selector_btn_pressed_color_blue"
+	            android:orientation="vertical">
+	            
+	            <TextView
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:drawableTop="@drawable/led"
+	                android:layout_alignParentBottom="true"
+	                android:gravity="center"
+	                android:text="LED灯"
+	                android:textColor="#FFDD11"
+	                android:textSize="17sp"/>
+	        </RelativeLayout>
+	    </LinearLayout>	
+	    
+	    <View 
+	        android:layout_width="match_parent"
+	        android:layout_height="2px"
+	        android:background="#33ffffff"/>
+	    
+	    <RelativeLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="210dp"
+	        android:layout_marginTop="20dp">
+	        <ImageView
+		        android:id="@+id/home_advertisement"
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:src="@drawable/advertisement"
+		        android:scaleType="fitXY"/>
+	        <LinearLayout 
+	            android:layout_width="match_parent"
+	            android:layout_height="30dp"
+	            android:background="#88000000"
+	            android:layout_alignParentBottom="true"
+	            android:orientation="vertical" >
+		        <com.shoes.customview.MarqueeTextView
+		            android:id="@+id/home_advertisement_text"
+		            android:layout_width="wrap_content"
+		            android:layout_height="30dp"		            
+		            android:gravity="center_vertical"
+		            android:paddingLeft="10dp"           
+		            android:background="#00000000" 
+		            android:text="商城有新商品更新了，快去挑选你喜欢的款吧！"
+		            android:textColor="#ffffff"
+		            android:drawableLeft="@drawable/horn"
+		            android:singleLine="true"
+		            android:ellipsize="marquee"
+		            android:marqueeRepeatLimit="marquee_forever"
+		            android:focusable="true"
+		            android:focusableInTouchMode="true"/>
+	        </LinearLayout>
+	        
+	            
+	    </RelativeLayout>
+	</LinearLayout>	      
+</ScrollView> 
+
+
+        
+    
+    
+    
+  

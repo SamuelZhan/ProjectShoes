@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.shoes"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="18"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />   
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+  	<uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+  	<uses-permission android:name="android.permission.BLUETOOTH"/>
+  	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+  	<uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+  	 
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.shoes.activity.FlashActivity"
+            android:label="@string/app_name" 
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity 
+            android:name="com.shoes.activity.GuideActivity"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:screenOrientation="portrait">            
+        </activity>
+        <activity 
+            android:name="com.shoes.activity.LoginActivity"
+            android:screenOrientation="portrait"
+            android:exported="true">            
+        </activity>
+        <activity 
+            android:name="com.shoes.activity.RegisterActivity"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:screenOrientation="portrait">            
+        </activity>
+        <activity 
+            android:name="com.shoes.activity.ForgetPasswordActivity"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:screenOrientation="portrait">            
+        </activity>
+        <activity 
+            android:name="com.shoes.activity.MainActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan"
+            android:screenOrientation="portrait">            
+        </activity>
+        <activity 
+            android:name="com.shoes.activity.VirtualCallActivity"
+            android:screenOrientation="portrait">            
+        </activity>
+        <activity 
+            android:name="com.shoes.activity.WallpaperActivity"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:screenOrientation="portrait">            
+        </activity>
+        <activity 
+            android:name="com.shoes.activity.ContactersActivity"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:screenOrientation="portrait">            
+        </activity>
+        <activity 
+            android:name="com.shoes.activity.CallingActivity"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:screenOrientation="portrait">            
+        </activity>
+        <activity 
+            android:name="com.shoes.activity.AnswerActivity"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:screenOrientation="portrait">            
+        </activity>
+        <activity 
+            android:name="com.shoes.activity.CountActivity"
+            android:screenOrientation="portrait">            
+        </activity>
+        <activity 
+            android:name="com.shoes.activity.StepsActivity"
+            android:screenOrientation="portrait">            
+        </activity>
+        <activity 
+            android:name="com.shoes.activity.HeatActivity"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:screenOrientation="portrait">            
+        </activity>
+        <activity 
+            android:name="com.shoes.activity.SearchPhoneActivity"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:screenOrientation="portrait">            
+        </activity>
+        <activity 
+            android:name="com.shoes.activity.SearchPhoneAlarmActivity"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:screenOrientation="portrait">            
+        </activity>
+        <activity 
+            android:name="com.shoes.activity.RemindActivity"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:screenOrientation="portrait">            
+        </activity>
+        <activity 
+            android:name="com.shoes.activity.RemindOnTimeActivity"
+            android:screenOrientation="portrait">            
+        </activity>
+        <activity 
+            android:name="com.shoes.activity.RemindOnTimeSettingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SampleTheme">            
+        </activity>
+        <activity 
+            android:name="com.shoes.activity.CountMessageActivity"
+            android:screenOrientation="portrait">            
+        </activity>
+        <activity 
+            android:name="com.shoes.activity.ConnectionActivity"
+            android:screenOrientation="portrait">            
+        </activity>
+        <activity 
+            android:name="com.shoes.activity.MyMessageActivity"
+            android:screenOrientation="portrait">            
+        </activity>
+        <activity 
+            android:name="com.shoes.activity.HeroActivity"
+            android:screenOrientation="portrait">            
+        </activity>
+        <activity 
+            android:name="com.shoes.activity.AboutUsActivity"
+            android:screenOrientation="portrait">            
+        </activity>
+        <activity 
+            android:name="com.shoes.activity.ResetPasswordActivity"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:screenOrientation="portrait">            
+        </activity>
+        <activity 
+            android:name="com.shoes.activity.ResetPasswordNextActivity"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:screenOrientation="portrait">            
+        </activity>
+        <activity 
+            android:name="com.shoes.activity.RankingsActivity"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:screenOrientation="portrait">            
+        </activity>
+        <activity 
+            android:name="com.shoes.activity.WebActivity"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:screenOrientation="portrait">            
+        </activity>
+        <activity 
+            android:name="com.shoes.activity.SendInfoActivity"
+            android:screenOrientation="portrait">            
+        </activity>
+        <activity 
+            android:name="com.shoes.activity.SpecificUserCommunityInfosActivity"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:screenOrientation="portrait">            
+        </activity>
+        <activity 
+            android:name="com.shoes.activity.PictureActivity"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:screenOrientation="portrait">            
+        </activity>
+        <activity 
+            android:name="com.shoes.activity.TutorialActivity"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity 
+            android:name="com.shoes.activity.TestActivity"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:screenOrientation="portrait">            
+        </activity>
+        
+      
+        <!-- 腾讯接口 -->
+        <activity
+ 				android:name="com.tencent.tauth.AuthActivity" 
+				android:noHistory="true" 
+				android:launchMode="singleTask" >
+ 				<intent-filter>
+					<action android:name="android.intent.action.VIEW" />
+					<category android:name="android.intent.category.DEFAULT" />
+					<category android:name="android.intent.category.BROWSABLE" />
+					<data android:scheme="tencent1104904639"/>
+				</intent-filter>
+ 		</activity>
+        <activity 
+            android:name="com.tencent.connect.common.AssistActivity"
+			android:theme="@android:style/Theme.Translucent.NoTitleBar"
+			android:configChanges="orientation|keyboardHidden|screenSize">           
+        </activity>
+        
+        <!-- 微信接口 -->
+        <activity 
+            android:name="com.example.shoes.wxapi.WXEntryActivity"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:screenOrientation="portrait"
+            android:exported="true">            
+        </activity>
+        
+        <!-- 微博接口 -->
+        <activity android:name="com.sina.weibo.sdk.component.WeiboSdkBrowser" 
+		    android:configChanges="keyboardHidden|orientation"
+		    android:theme="@android:style/Theme.Translucent.NoTitleBar"
+		    android:windowSoftInputMode="adjustResize"
+		    android:exported="false" >
+		</activity>
+		<service android:name="com.sina.weibo.sdk.net.DownloadService"
+		    android:exported="false">
+		</service>
+        
+        <service android:name="com.shoes.service.BleService"/>
+       
+    </application>
+
+</manifest>
